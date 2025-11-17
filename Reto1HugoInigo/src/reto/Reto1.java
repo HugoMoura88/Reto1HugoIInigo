@@ -23,14 +23,14 @@ public class Reto1 {
 		int opcion = Funciones.dimeEntero("Opcion: ", sc);
 			switch (opcion) {
 
-			case 1 -> System.out.println(Funciones1.sumar(sc));
-			case 2 -> System.out.println(Funciones1.restar(5, 2));
-			case 3 -> System.out.println(Funciones2.multiplicar(2, 4));
-			case 4 -> System.out.println(Funciones2.dividir(4, 2));
-			case 5 -> System.out.println(Funciones1.esPar(1));
-			case 6 -> System.out.println(Funciones1.esImpar(2));
-			case 7 -> System.out.println(Funciones2.esPositivo(3));
-			case 8 -> System.out.println(Funciones2.esNegativo(-4));
+			case 1 -> System.out.println("Resultado: "+Funciones1.sumar(sc));
+			case 2 -> System.out.println("Resultado: "+Funciones1.restar(5, 2));
+			case 3 -> System.out.println("Resultado: "+Funciones2.multiplicar(2, 4));
+			case 4 -> System.out.println("Resultado: "+Funciones2.dividir(4, 2));
+			case 5 -> System.out.println("Resultado: "+Funciones1.esPar(1));
+			case 6 -> System.out.println("Resultado: "+Funciones1.esImpar(2));
+			case 7 -> System.out.println("Resultado: "+Funciones2.esPositivo(3));
+			case 8 -> System.out.println("Resultado: "+Funciones2.esNegativo(-4));
 			default -> System.out.println("Opcion no valida"); 
 			}
 				
