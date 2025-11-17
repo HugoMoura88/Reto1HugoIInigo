@@ -7,6 +7,8 @@ public class Reto1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		int opcion = 1;
+		do {
 		String menu = """ 
 				Elige la operacion:
 				1. Sumar
@@ -20,19 +22,19 @@ public class Reto1 {
 				0. Salir
 				""";
 		System.out.println(menu);
-		int opcion = Funciones.dimeEntero("Opcion: ", sc);
+		opcion = Funciones.dimeEntero("Opcion: ", sc);
 			switch (opcion) {
-
-			case 1 -> System.out.println(Funciones1.sumar(sc));
-			case 2 -> System.out.println(Funciones1.restar(5, 2));
-			case 3 -> System.out.println(Funciones2.multiplicar(2, 4));
-			case 4 -> System.out.println(Funciones2.dividir(4, 2));
-			case 5 -> System.out.println(Funciones1.esPar(1));
-			case 6 -> System.out.println(Funciones1.esImpar(2));
-			case 7 -> System.out.println(Funciones2.esPositivo(3));
-			case 8 -> System.out.println(Funciones2.esNegativo(-4));
+			case 1 -> System.out.println("Resultado: "+Funciones1.sumar(sc));
+			case 2 -> System.out.println("Resultado: "+Funciones1.restar(sc));
+			case 3 -> System.out.println("Resultado: "+Funciones2.multiplicar(sc));
+			case 4 -> System.out.println("Resultado: "+Funciones2.dividir(sc));
+			case 5 -> System.out.println(Funciones1.esPar(sc));
+			case 6 -> System.out.println(Funciones1.esImpar(sc));
+			case 7 -> System.out.println(Funciones2.esPositivo(sc));
+			case 8 -> System.out.println(Funciones2.esNegativo(sc));
 			default -> System.out.println("Opcion no valida"); 
 			}
+		} while (opcion!=0);
 				
 				
 		
