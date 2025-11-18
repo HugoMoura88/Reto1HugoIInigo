@@ -2,6 +2,8 @@ package reto;
 
 import java.util.Scanner;
 
+import Reto.Funciones;
+
 public class Funciones1 {
  
 	

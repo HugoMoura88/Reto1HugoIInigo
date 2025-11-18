@@ -3,6 +3,8 @@ package reto;
 import java.util.Locale;
 import java.util.Scanner;
 
+import Reto.Funciones;
+
 public class Reto1 {
 
 	public static void main(String[] args) {
